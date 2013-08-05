@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066)https://spark-public.s3.amazonaws.com/startup/code/bitstarter.html -->
+
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>mbau3d</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="custom.css">    
+    <style type="text/css">
+      /*Large screen*/
+      @media (min-width: 980px) {
+      body {
+      padding-top: 60px;
+      }
+      .body-content {
+      padding: 0;
+      }
+      .linediv-l {
+      border-right: 1px white solid;
+      }
+      .linediv-r {
+      border-left: 1px white solid;
+      }
+      }
+
+      /*Up to landscape phones*/
+      @media (max-width: 480px) {
+      .copy {
+      padding: 2.5% 10%;
+      }
+      .linediv-l {
+      border-bottom: 1px white solid;
+      }
+      .linediv-r {
+      border-top: 1px white solid;
+      }
+      }
+
+      body {
+      font-family: Helvetica, sans-serif;
+      }
+
+      h1 {
+      color:red;
+      }
+
+      .body-content {
+      padding-left: 15px;
+      padding-right: 15px;
+      }
+
+      .btn {
+      margin: 1em;
+      width: 100%;
+      }
+
+      .btn-success {
+      display: block;
+      margin: 0 auto;
+      }
+
+      .butts {
+      background-color: #343434;
+      color: white;
+      height: 300px;      
+      width: 480px;
+      }
+
+      .heading, .subheading, .linedivs {
+      font-family: Helvetica;
+      text-align: center;
+      }
+
+      .jumbotron {
+      background-color: transparent;
+      text-align: center;
+      }
+
+      .placeholder {
+      display: block;
+      margin: 0 auto;
+      }
+
+      .section1 {
+      margin-top: 4em; 
+      }
+
+      .social {
+
+      }
+
+      .thermometer {
+      border: 1px solid black;
+      margin: 4%;
+      }
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
   </head>
   <body>
+
     <!-- Static navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -27,97 +120,99 @@
     </div>
 
     <div class="container">
-      <div class="row-fluid heading">
-	    <div class="span12">
-	      <h1>mbau3d</h1>
-	    </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Marketing stuff!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+        <p></p>
       </div>
 
-      <div class="row-fluid subheading">
-	    <div class="span12">
-	      <p class="lead">Impresora 3D hecha en Guatemala</p>
+      <div class="body-content">
+
+	<div class="row marketing">
+          <div class="col-lg-6">
+	    <img src="http://placehold.it/480x300" class="placeholder">
+          </div>
+
+          <div class="col-lg-6">
+            
+	    <div class="col-lg-12">
+	      <div class="container butts">
+	        
+		<div class="row linedivs">
+		  <div class="col-lg-4 linediv-l">
+		    <h3>1000</h3> <p>backers</p>
+		  </div>
+		  <div class="col-lg-4 linediv-c">
+		    <h3>1000</h3> <p>backers</p>
+		  </div>
+		  <div class="col-lg-4 linediv-r">
+		    <h3>1000</h3> <p>backers</p>
+		  </div>
+		</div>
+
+		<div class="row">	      	      
+		  <div class="thermometer progress active"> 	      
+		    <div class="bar bar-success" style="width: 60%;"></div> 	       	      
+		    <div class="bar bar-warning" style="width: 40%;"></div> 	       	      
+		  </div> 	      
+		</div>	      	      
+
+		<div class="row">
+		  <div class="col-lg-6 col-offset-3">
+		    <button class="btn btn-success btn-large">Ordenar</button>  
+		  </div>
+		</div> 
+
+		<div class="row">
+		  <div class="col-lg-3 col-offset-3">
+		    <button class="btn btn-facebook"><i class="icon-facebook"></i> | FB </button>
+		  </div>
+		  <div class="col-lg-3">
+		    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
+		  </div>
+		</div>
+
+	      </div>
+
 	    </div>
-      </div>
-
-      <div class="row-fluid pitch">
-
-	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	  </div>
+	  
 	</div>
+      </div>
+      
+      <div class="section1 text-center">    
 
-	<div class="span5 actions">
-	  <div class="span8 offset2">
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 
-	    <div class="statistics">
+	  <h4>Subheading</h4>
+	  <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-	      <div class="span4">
-		<div class="linediv-l">
-		  <h3>666</h3> <p>backers</p>
-		</div>
-	      </div>
+	  <h4>Subheading</h4>
+	  <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 
-	      <div class="span4">
-		<div class="linediv-c">
+      </div>
+
+    </div>
+
+
+
+
+
+
+	  
     
-		</div>
-	      </div>
-
-	      <div class="span4">
-		<div class="linediv-r">
-
-		</div>
-	      </div>
-
-	    </div>
-	  </div>
-
-	  <div class="span10 offset1">
-	    <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width: 0%"></div>
-	      <div class="bar bar-warning" style="width: 100%"></div>
-	    </div>
-	  </div>
-
-	  <div class="span6 offset3 order">
-	    <button class="btn btn-success btn-large">Preorder</button>
-	  </div>
-
-	  <div class="span8 offset2 social">
-	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
-	    <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-	  </div>
-
-	  <div class="row-fluid section1">
-	    <div class="span5 offset1 asset">
-	      <img src="http://placehold.it/480x300">
-	    </div>
-	    <div class="span5 copy">
-	      <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-	      </p>
-	    </div>
-	  </div>
-
-	  <div class="row-fluid section2">
-	    <div class="span5 offset1 copy copy-right">
-	      <p>
-		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-	      </p>
-	    </div>
-	    <div class="span5 asset">
-	      <img src="http://placehold.it/480x300">
-	    </div>
-	  </div>
-
-	  <div class="row-fluid faq">	    
-	    <div class="span10 offset1">
+	  <div class="row faq">	    
+	    <div class="col-lg-10 col-offset-1">
 	      <h3>FAQ</h3>
 	      <div class="accordion" id="accordion2">
 		<div class="accordion-group">
 		  <div class="accordion-heading">
-		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="collapseOne">FAQ</a>
+		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">FAQ</a>
 		  </div>
-		  <div id="collapseOne" class="accordion-body collapse">
+		  <div id="collapseOne" class="accordion-body collapse in">
 		    <div class="accordion-inner">
 		      Frequently asked questions
 		    </div>
@@ -126,7 +221,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 		<div class="accordion-group">
 		  <div class="accordion-heading">
-		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="collapseTwo">FAQ</a>
+		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">FAQ</a>
 		  </div>
 		  <div id="collapseTwo" class="accordion-body collapse">
 		    <div class="accordion-inner">
@@ -138,8 +233,8 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 	      </div>  
 	    </div>  
 
-    </div>
-  
+	  </div>
+    </div>  
 
 </body>
 
