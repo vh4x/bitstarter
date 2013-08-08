@@ -121,7 +121,7 @@
       margin-top: 28px;
       }
 
- /*Large screen*/
+      /*Large screen*/
       @media (min-width: 980px) {
       body {
       padding-top: 40px;
@@ -152,6 +152,28 @@
       padding-right: 0;
       }
 
+      .centrado{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .cuadro
+      {
+        background-color: #fff;
+        border-width: 1px;
+        border-color: #ddd;
+        border-radius: 4px 4px 0 0;
+        box-shadow: none;
+        position: relative;
+        padding: 15px 15px 15px;
+        border: solid;
+        margin-bottom: 15px;
+        max-width:800px;
+      }
+
+      .margenes {
+        margin-bottom: 25px;
+        margin-top: 25px;
+      }
       }
 
     </style>
@@ -174,6 +196,31 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="/about">About</a></li>
           </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="registro.html">Reg&iacute;strate</a></li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">Inicia sesi&oacute;n<strong class="caret"></strong></a>
+              <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px; width: 280px;">
+                <form class="centrado cuadro">
+                  <fieldset>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="inputEmail" placeholder="Correo electr&oacute;nico">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Contrasena">
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Recordarme
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Iniciar sesi&oacute;n</button>
+                  </fieldset>
+                </form>
+              </div>
+            </li>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -184,106 +231,82 @@
         <h1>Mbau3D</h1>
         <p class="lead">Impresora 3D hecha en Guatemala, con orgullo.</p>
 
-	<div class="well">
-
-	      <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
+	       <div class="well">
+          <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
 	          <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
-		    
-		  </div>
+		      </div>
       </div>    <!-- Jumbotron end -->
 
 
       <div class="body-content">
+        <h3 >Donaci&oacute;n</h3>
+        <h4 >Seleccione la tarjeta a utilizar</h4>
+         <div class="row">
+          <div class="col-10 col-lg-10">
+            <table class="table table-striped cuadro">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Tarjeta de cr&eacute;dito o d&eacute;bito</th>
+                  <th>Nombre en la tarjeta</th>
+                  <th>Fecha de expiraci&oacute;n</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  </td>
+                  <td>
+                    <strong >VISA</strong> terminaci&oacute;n 9279
+                  </td>
+                  <td>
+                    MARIA BUSTAMANTE
+                  </td>
+                  <td>
+                    01/2016
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  </td>
+                  <td>
+                    <strong >VISA</strong> terminaci&oacute;n 7651
+                  </td>
+                  <td>
+                    ANDREA BUSTAMANTE
+                  </td>
+                  <td>
+                    11/2013
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-2 col-lg-2">
+            <button class="btn btn-success btn-large">Ordenar</button>
+          </div>
+        </div> 
 
-        <div class="col-sm-6 col-lg-6">
-	  <img class="img-thumbnail placeholder" src="http://placehold.it/480x300">
-        </div>
-
-        <div class="col-sm-6 col-lg-6 butts">	      
-	  <div class="row linedivs">
-	    <div class="col-lg-4 linediv-l">
-	      <h3>1000</h3> <p>donadores</p>
-	    </div>
-	    <div class="col-lg-4 linediv-c">
-	      <h3>Q3000</h3> <p>de Q10,000</p>
-	    </div>
-	    <div class="col-lg-4 linediv-r">
-	      <h3>7</h3> <p>d&iacute;as restantes</p>
-	    </div>
-	  </div>
-	  
-	  <div class="row">            
-	    <div class="thermometer progress progress-striped">       
-	      <div class="progress-bar progress-bar-success" style="width: 30%;"></div>              
-	      <div class="progress-bar progress-bar-warning" style="width: 70%;"></div>              
-	    </div>
-	  </div>            
-	  
-	  <div class="row">
-	    <div class="col-3 col-lg-3">
-	    </div>
-	    <div class="col-6 col-lg-6">
-	      <button class="btn btn-success btn-large">Ordenar</button>
-	    </div>
-	    <div class="col-3 col-lg-3">
-	    </div>
-	  </div> 
-	</div>
-      </div>
+        <h4>Agregar tarjeta de d&eacute;bito o cr&eacute;dito</h4>
+        <form class="form-inline margenes ">
+          <label>
+            N&uacute;mero de la tarjeta
+            <input type="text" class="form-control">
+          </label>
+          <label>
+            Nombre en la tarjeta
+            <input type="text" class="form-control">
+          </label>
+          <label>
+            Fecha de expiraci&oacute;n
+            <input type="month" class="form-control">
+          </label>
+          <button type="submit" class="btn btn-default">Agregar tarjeta</button>
+        </form>
     </div>
-
-    <div class="container-narrow">
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Producto</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Caracter&iacute;sticas</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Diferencias</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Versiones</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row faq">    
-      <div class="col-lg-10 col-offset-1">
-	<h3>FAQ</h3>
-	<div class="accordion" id="accordion2">
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">FAQ impresora</a>
-	    </div>
-	    <div id="collapseOne" class="accordion-body collapse in">
-	      <div class="accordion-inner">
-		Preguntas frecuentes sobre la impresora
-	      </div>
-	    </div>
-	  </div>
-
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">FAQ adquirir</a>
-	    </div>
-	    <div id="collapseTwo" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		Preguntas frecuentes sobre adquisici&oacute;n de la impresora.
-	      </div>
-	    </div>
-	  </div>
-	</div>  
-      </div>  
-    </div>
-
 
 </body>
 
 </html>
-

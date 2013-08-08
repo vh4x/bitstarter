@@ -39,38 +39,15 @@
       body {
       font-family: Helvetica, sans-serif;
       }
-
-      h1 {
-      color:red;
-      }
-
-      .body-content {
-      padding-left: 15px;
-      padding-right: 15px;
-      }
-
-      .btn {
-      margin: auto;
-      width: 100%;
-      }
-
-      .btn-success {
-      display: block;
+      
+      /* Custom container */
+      .container-narrow {
       margin: 0 auto;
+      max-width: 700px;
       }
-
-      .butts {
-      background-color: #343434;
-      color: white;
-      height: 300px;      
-      width: 480px;
+      .container-narrow > hr {
+      margin: 30px 0;
       }
-
-      .heading, .subheading, .linedivs {
-      font-family: Helvetica;
-      text-align: center;
-      }
-
       .jumbotron {
       background-color: transparent;
       text-align: center;
@@ -78,22 +55,15 @@
 
       .placeholder {
       display: block;
+      margin: 20px auto;
+      }
+
+      .row {
+      display: block;
       margin: 0 auto;
+      text-align:justify;
       }
-
-      .section {
-      margin: 4em; 
-      }
-
-      .social {
-
-      }
-
-      .thermometer {
-      border: 1px solid black;
-      margin: 4%;
-      }
-
+    
     </style>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
@@ -108,46 +78,43 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Project name</a>
+        <a class="navbar-brand" href="#">Mbau3D</a>
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/home">Home</a></li>
+            <li class="active"><a href="#about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
     
-    <div class="container">
+    <div class="container-narrow">
       
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>Marketing stuff!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <p></p>
+        <h1>Acerca de Mbau3D</h1>
+        <p class="lead">P&aacute;gina para mercadear aspectos de la impresora que no van en el bitstarter principal.</p>
       </div>
       
       <div class="body-content">
-	<img src="http://placehold.it/480x300" class="placeholder">
+	<img src="http://placehold.it/480x300" class="img-thumbnail placeholder">
 
 	<div class="row section">    
 	  <div class="col-lg-4">
-	    <h4>Subheading</h4>
+	    <h4>Creadores</h4>
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-	    <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
-
+	    <p><a class="btn btn-success" href="#">Enlace externo &raquo;</a></p>
 	  </div>
 	  <div class="col-lg-4">
-	    <h4>Subheading</h4>
+	    <h4>Patrocinadores</h4>
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-	    <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+	    <p><a class="btn btn-success" href="#">Enlace externo &raquo;</a></p>
 	  </div>
 
 	  <div class="col-lg-4">
-	    <h4>Subheading</h4>
+	    <h4>Otros proyectos</h4>
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-	    <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+	    <p><a class="btn btn-success" href="#">Enlace externo &raquo;</a></p>
 	  </div>
 
 	</div>
